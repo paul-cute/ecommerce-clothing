@@ -1,17 +1,7 @@
 import Home from './routes/home/Home'
+import Navigation from './routes/navigation/Navigation'
 import {Routes, Route, Outlet} from 'react-router-dom'
 
-
-const Navigation = () => {
-  return (
-    <div>
-      <div>
-        <h1>Navigation Bar</h1>
-      </div>
-      <Outlet/>
-    </div>
-  )
-}
 
 export default function App() {
 
