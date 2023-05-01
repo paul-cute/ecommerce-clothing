@@ -2,16 +2,17 @@ import {Outlet,Link} from 'react-router-dom'
 import './navigation.scss'
 import {ReactComponent as CrwnLogo} from '../../assets/crown.svg'
 import { useContext } from 'react'
-import { UserContext } from '../../contexts/userContext'
 import { signOutUser } from '../../utils/firebase/firebase'
 import CartIcon from '../../components/cartIcon/cartIcon'
 import CartDropdown from '../../components/cartDropdown/cartDropdown'
 import { CartContext } from '../../contexts/cartContext'
-
+import {useSelector} from 'react-redux'
+import { selectCurrentUser } from '../../store/user/userSelector'
 
 
 export default function Navigation(){
-    const {currentUser} = useContext(UserContext);
+
+    const currentUser = useSelector(selectCurrentUser)
     const {isCartOpen} = useContext(CartContext);
   
     return (
