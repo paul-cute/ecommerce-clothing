@@ -16,7 +16,6 @@ function CheckoutItem({cartItem}) {
   const removeItemHandler = () =>
     dispatch(removeItemFromCart(cartItems, cartItem));
 
-
   return (
     <div className='checkout-item-container'>
       <div className='image-container'>

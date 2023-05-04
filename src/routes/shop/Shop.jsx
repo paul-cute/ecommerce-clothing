@@ -6,9 +6,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import {fetchCategoriesStartAsync} from '../../store/categories/categoriesAction'
 
-
-
-
 function Shop() {
 
   const dispatch = useDispatch()
